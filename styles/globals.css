@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
   font-family: 'Work Sans', sans-serif;
+}
+
+.button-absolute {
+  position: absolute;
+  height: 19px;
+  left: 36.15%;
+  right: 36.15%;
+  top: calc(50% - 19px / 2 + 0.5px);
 }
