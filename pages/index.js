@@ -72,16 +72,32 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="pt-[67px] px-[32px] bg-black h-screen">
+          <div className="pt-[67px] px-[32px] bg-black h-auto">
             <h3 className="font-black text-[32px] text-white">Help & Tips</h3>
-            <div className="flex flex-col mt-[30px]">
+            <div className="flex flex-col mt-[20px]">
               <CardHelpTips />
               <CardHelpTips />
               <CardHelpTips />
             </div>
           </div>
         </section>
+        <section>
+          <div className="pt-[67px] pb-[101px] px-[32px] bg-black ">
+            <h3 className="font-black text-[32px] text-white">You’re all set.</h3>
+            <p className="text-white leading-[24px] font-normal mt-[30px] mb-[67px]">The wise man therefore always holds in these matters to this principle of selection.</p>
+            <Image src="/bitmap.svg" objectFit="contain" width={142} height={236} className="rotate-180" />
+          </div>
+        </section>
       </main>
+      <footer>
+        <div className="bg-[#0B24FB] text-white flex flex-row justify-between p-[24px]">
+          <p>
+            <span className="font-bold">wknd@</span>
+            2020
+          </p>
+          <button type="button" className="font-light text-[10px] border whitespace-nowrap border-white py-[3px] px-[9px] rounded-full">alpha version 0.1</button>
+        </div>
+      </footer>
     </div>
   );
 }
