@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import Card from '../components/molecules/Card';
+import CardHelpTips from '../components/molecules/CardHelpTips';
+import CardTypography from '../components/molecules/CardTypography';
 
 export default function Home() {
   return (
@@ -57,12 +58,29 @@ export default function Home() {
               </p>
               <h3 className="font-black text-[32px] text-white">Testimonial</h3>
               <div className="flex -mb-16">
-                <Card />
+                <CardTypography />
               </div>
             </div>
           </div>
         </section>
-        <section className="bg-black h-screen" />
+        <section>
+          <div className="px-[32px] pt-[162px] bg-black h-auto">
+            <h3 className="font-black text-[32px] text-white">POV</h3>
+            <p className="text-white leading-[24px] font-normal mt-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <h3 className="font-black text-[32px] pt-[67px] text-white">RESOURCE</h3>
+            <p className="text-white leading-[24px] font-normal mt-[30px]">These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best</p>
+          </div>
+        </section>
+        <section>
+          <div className="pt-[67px] px-[32px] bg-black h-screen">
+            <h3 className="font-black text-[32px] text-white">Help & Tips</h3>
+            <div className="flex flex-col mt-[30px]">
+              <CardHelpTips />
+              <CardHelpTips />
+              <CardHelpTips />
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
