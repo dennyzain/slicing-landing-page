@@ -1,12 +1,12 @@
 import Header from '../components/organisms/Header';
-import Main from '../components/organisms/Main';
+import Content from '../components/organisms/Content';
 import Footer from '../components/organisms/Footer';
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Main />
+      <Content />
       <Footer />
     </>
   );
