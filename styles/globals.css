@@ -9,8 +9,6 @@
 
 .button-absolute {
   position: absolute;
-  height: 19px;
-  left: 36.15%;
-  right: 36.15%;
-  top: calc(50% - 19px / 2 + 0.5px);
+  left:calc(50% - 115px);
+  top: calc(50% + 48px);
 }

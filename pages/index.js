@@ -6,12 +6,10 @@ export default function Home() {
   return (
     <div>
       <header>
-        {/* the width not same */}
         <nav className="flex flex-row w-full px-[23px] py-[17px] bg-white">
           <Image src="/logo_navbar.svg" width={33} height={33} alt="logo navbar" />
-          <div className="ml-3">
-            {/* cek lagi nih anjeng */}
-            <p className="leading-[14px]">
+          <div className="ml-3 ">
+            <p className="leading-[14px] -mt-1">
               <span className="text-sm">Good Morning</span>
               <br />
               <span className="font-bold">Fellas</span>
@@ -21,15 +19,14 @@ export default function Home() {
       </header>
       <main>
         <section>
-          <div className="pt-[67px] pb-7 text-center bg-[#eeeeee]">
-            {/* di ukuran paling kecil susah tulisannya mengkerut */}
-            <h1 className="leading-[51px] font-black text-5xl mx-6">WEEKEND FROM HOME</h1>
-            <p className="leading-3 italic mt-5">stay active with a little workout.</p>
-            <div className="relative flex flex-col justify-center mt-24 mx-auto">
-              <Image src="/bitmap.svg" objectFit="contain" width={184} height={305} />
+          <div className="pt-[67px] pb-[20px] text-center bg-[#eeeeee]">
+            <h1 className="leading-[51px] font-black text-[52px] mx-[23px]">WEEKEND FROM HOME</h1>
+            <p className="leading-[19px] italic mt-5">stay active with a little workout.</p>
+            <div className="relative flex flex-col justify-center-center mt-[67px] mx-auto">
+              <Image src="/bitmap.svg" objectFit="initial" width={184} height={305} />
               <button
                 type="button"
-                className="button-absolute text-center rounded-full whitespace-nowrap bg-white"
+                className="button-absolute py-[20px] px-[84px] text-center rounded-full whitespace-nowrap bg-white"
               >
                 Let&apos;s Go
               </button>
@@ -38,26 +35,29 @@ export default function Home() {
         </section>
         <section>
           <div className="w-screen flex flex-col bg-[#aaaaaa]">
-            <Image
-              src="/bitmap.svg"
-              objectFit="contain"
-              width={95}
-              height={158}
-              className="-rotate-90 right-0"
-            />
+            <div className="flex justify-end w-full my-[31.5px] pr-[0.5px]">
+              <Image
+                src="/bitmap.svg"
+                objectFit="contain"
+                objectPosition="right"
+                width={158}
+                height={158}
+                className="-rotate-90"
+              />
+            </div>
             <div className="px-[32px]">
               <p className="leading-[24px] text-right">
-                <span className="text-[#0B24FB] font-bold text-base">Deffinition;</span>
+                <span className="text-[#0B24FB] font-bold text-base ">Deffinition;</span>
                 {' '}
                 span a practice or exercise to test or improve one&apos;s fitness
                 for athletic competition, ability, or performance to exhaust (something, such as a
                 mine) by working to devise, arrange, or achieve by resolving difficulties.
                 Merriam-Webster.com Dictionary.
                 <br />
-                <span className="font-semibold italic">-weekend team</span>
+                <span className="font-semibold italic inline-block text-white mt-[20px]">-weekend team</span>
               </p>
-              <h3 className="font-black text-[32px] text-white">Testimonial</h3>
-              <div className="flex -mb-16">
+              <h3 className="font-black text-[32px] mt-[107px] mb-[30px] text-white">Testimonial</h3>
+              <div className="flex -mb-[100px]">
                 <CardTypography />
               </div>
             </div>
