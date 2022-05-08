@@ -1,8 +1,8 @@
-export default function CardTypography() {
+export default function CardTypography({ username, feedback }) {
   return (
-    <div className="bg-white p-5 w-[247px]">
-      <h4 className="font-black text-[32px] pb-[20px]">Blu Kicks</h4>
-      <p className="text-[12px] leading-[14px]">Places where you can leverage tools and software to free up time to focus on growing the business.</p>
+    <div className="bg-white p-5 w-[247px] h-[140px] box-border">
+      <h4 className="font-black text-[32px]">{username}</h4>
+      <p className="text-[12px] leading-[14px] pt-[20px]">{feedback.substring(0, 100)}</p>
     </div>
   );
 }

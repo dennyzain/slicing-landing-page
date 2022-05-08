@@ -1,16 +1,16 @@
-import DeffinitionSection from '../molecules/DeffinitionSection';
-import HelpTipsSection from '../molecules/HelpTipsSection';
-import HeroSection from '../molecules/HeroSection';
-import PovResourceSection from '../molecules/PovResourceSection';
-import QuoteSection from '../molecules/QuoteSection';
+import DeffinitionTestiSection from '@components/molecules/DeffinitionTestiSection';
+import HelpTipsSection from '@components/molecules/HelpTipsSection';
+import HeroSection from '@components/molecules/HeroSection';
+import PovResourceSection from '@components/molecules/PovResourceSection';
+import QuoteSection from '@components/molecules/QuoteSection';
 
-export default function Content() {
+export default function Content({ data }) {
   return (
     <>
       <HeroSection />
-      <DeffinitionSection />
+      <DeffinitionTestiSection data={data[0]} />
       <PovResourceSection />
-      <HelpTipsSection />
+      <HelpTipsSection data={data[1]} />
       <QuoteSection />
     </>
   );
