@@ -7,6 +7,10 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+.animate-hover{
+  @apply transition-transform duration-500 hover:scale-110 hover:cursor-pointer;
+}
+
 .button-absolute {
   position: absolute;
   left:calc(50% - 115px);

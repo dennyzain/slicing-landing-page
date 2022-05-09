@@ -1,4 +1,4 @@
-import CardHelpTips from '../atoms/CardHelpTips';
+import CardHelpTips from '@components/atoms/CardHelpTips';
 
 export default function HelpTipsSection({ data }) {
   return (

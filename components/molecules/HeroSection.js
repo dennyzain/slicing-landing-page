@@ -10,7 +10,7 @@ export default function HeroSection() {
           <Image src="/bitmap.svg" objectFit="initial" width={184} height={305} />
           <button
             type="button"
-            className="button-absolute py-[20px] px-[84px] text-center rounded-full whitespace-nowrap bg-white"
+            className="button-absolute py-[20px] px-[84px] text-center rounded-full whitespace-nowrap bg-white animate-hover"
           >
             Let&apos;s Go
           </button>

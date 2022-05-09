@@ -1,13 +1,23 @@
+import react, { useCallback } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {
-  Navigation, A11y,
-} from 'swiper';
-import CardTypography from '../atoms/CardTypography';
+import CardTypography from '@components/atoms/CardTypography';
 import 'swiper/css';
-import 'swiper/css/navigation';
+import { HiArrowSmLeft, HiArrowSmRight } from 'react-icons/hi';
 
 export default function DeffinitionTestiSection({ data }) {
+  const sliderRef = react.useRef(null);
+
+  const handlePrev = useCallback(() => {
+    if (!sliderRef.current) return;
+    sliderRef.current.swiper.slidePrev();
+  }, []);
+
+  const handleNext = useCallback(() => {
+    if (!sliderRef.current) return;
+    sliderRef.current.swiper.slideNext();
+  }, []);
+
   return (
     <section>
       <div className="w-screen flex flex-col bg-[#EEBECE]">
@@ -21,7 +31,7 @@ export default function DeffinitionTestiSection({ data }) {
             className="-rotate-90"
           />
         </div>
-        <div className="px-[32px] xl:px-[373.5px]">
+        <div className="px-[32px] xl:px-[315.5px]">
           <p className="leading-[24px] text-right text-base xl:text-[21px] xl:leading-[32px]">
             <span className="text-[#0B24FB] font-bold text-base ">Deffinition;</span>
             {' '}
@@ -37,22 +47,30 @@ export default function DeffinitionTestiSection({ data }) {
           <h3 className="font-black text-[32px] leading-[37.5px] mt-[107px] mb-[30px] text-white xl:text-center">
             Testimonial
           </h3>
-          <div className="flex relative -mb-[100px] justify-around xl:max-w-[621px] xl:w-full">
+          <div className="flex flex-row items-center relative -mb-[100px] justify-around">
+            <button type="button" onClick={handlePrev} className="bg-white py-[11.2px] px-[10.4px] mr-[25px] rounded-full hidden md:block">
+              <HiArrowSmLeft color="#0B24FB" size={21} />
+            </button>
             <Swiper
-              modules={[Navigation, A11y]}
-              slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
-              scrollbar={{ draggable: true }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log('slide change')}
+              ref={sliderRef}
+              spaceBetween={10}
+              slidesPerView="auto"
+              mousewheel={{
+                forceToAxis: true,
+                sensitivity: 1,
+                releaseOnEdges: true,
+              }}
+              className="w-[621px]"
             >
               {data.map((item) => (
-                <SwiperSlide className="flex justify-center">
-                  <CardTypography key={item.id} username={item.by} feedback={item.testimony} />
+                <SwiperSlide key={item.id} className="max-w-[247px]">
+                  <CardTypography username={item.by} feedback={item.testimony} />
                 </SwiperSlide>
               ))}
             </Swiper>
+            <button type="button" onClick={handleNext} className="bg-white py-[11.2px] px-[10.4px] ml-[25px] rounded-full animate-hover hidden md:block">
+              <HiArrowSmRight color="#0B24FB" fontSize={21} />
+            </button>
           </div>
         </div>
       </div>
