@@ -7,8 +7,10 @@ import QuoteSection from '@components/molecules/QuoteSection';
 export default function Content({ data }) {
   return (
     <>
-      <HeroSection />
-      <DeffinitionTestiSection data={data[0]} />
+      <div className="bg-no-repeat bg-[#EEBECE] bg-hero-black bg-top">
+        <HeroSection />
+        <DeffinitionTestiSection data={data[0]} />
+      </div>
       <PovResourceSection />
       <HelpTipsSection data={data[1]} />
       <QuoteSection />
