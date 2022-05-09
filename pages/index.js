@@ -14,12 +14,14 @@ export default function Home({ data }) {
 export const getStaticProps = async () => {
   const baseUrl = 'https://wknd-take-home-challenge-api.herokuapp.com';
 
-  const resTest = await fetch(`${baseUrl}/testimonial`);
-  const resHelp = await fetch(`${baseUrl}/help-tips`);
+  const response = await Promise.all([
+    fetch(`${baseUrl}/testimonial`).then((res) => res.json()),
+    fetch(`${baseUrl}/help-tips`).then((res) => res.json()),
+  ]).then((res) => res);
 
-  const dataTest = await resTest.json();
-  const dataHelp = await resHelp.json();
+  const data = response.map((item) => item);
+
   return {
-    props: { data: [dataTest, dataHelp] },
+    props: { data },
   };
 };

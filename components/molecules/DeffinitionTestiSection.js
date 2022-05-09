@@ -1,9 +1,9 @@
 import react, { useCallback } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { HiArrowSmLeft, HiArrowSmRight } from 'react-icons/hi';
 import CardTypography from '@components/atoms/CardTypography';
 import 'swiper/css';
-import { HiArrowSmLeft, HiArrowSmRight } from 'react-icons/hi';
 
 export default function DeffinitionTestiSection({ data }) {
   const sliderRef = react.useRef(null);
