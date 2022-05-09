@@ -47,9 +47,9 @@ export default function DeffinitionTestiSection({ data }) {
           <h3 className="font-black text-[32px] leading-[37.5px] mt-[107px] mb-[30px] text-white xl:text-center">
             Testimonial
           </h3>
-          <div className="flex flex-row items-center relative -mb-[100px] justify-around">
-            <button type="button" onClick={handlePrev} className="bg-white py-[11.2px] px-[10.4px] mr-[25px] rounded-full hidden md:block">
-              <HiArrowSmLeft color="#0B24FB" size={21} />
+          <div className="flex flex-row items-center relative -mb-[96px] justify-around">
+            <button type="button" onClick={handlePrev} className="bg-white p-[7.5px] mr-[25px] rounded-full hidden md:block">
+              <HiArrowSmLeft color="#0B24FB" size={17} />
             </button>
             <Swiper
               ref={sliderRef}
@@ -68,8 +68,8 @@ export default function DeffinitionTestiSection({ data }) {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <button type="button" onClick={handleNext} className="bg-white py-[11.2px] px-[10.4px] ml-[25px] rounded-full animate-hover hidden md:block">
-              <HiArrowSmRight color="#0B24FB" fontSize={21} />
+            <button type="button" onClick={handleNext} className="bg-white p-[7.5px] ml-[25px] rounded-full animate-hover hidden md:block">
+              <HiArrowSmRight color="#0B24FB" fontSize={17} />
             </button>
           </div>
         </div>
