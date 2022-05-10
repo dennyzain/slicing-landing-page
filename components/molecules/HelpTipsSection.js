@@ -3,7 +3,7 @@ import CardHelpTips from '@components/atoms/CardHelpTips';
 export default function HelpTipsSection({ data }) {
   return (
     <section>
-      <div className="pt-[67px] px-[32px] bg-black h-auto xl:px-0">
+      <div className="pt-[67px] px-[32px] bg-black bg-help-pink-path bg-no-repeat bg-pink-help-oval-xl h-auto xl:px-0">
         <h3 className="font-black text-[32px] text-white xl:text-center xl:leading-[38px]">
           Help & Tips
         </h3>

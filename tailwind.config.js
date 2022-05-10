@@ -10,6 +10,7 @@ module.exports = {
         'def-pink-path': "url('/path-4.svg')",
         'test-blue-path': "url('/oval-small.svg')",
         'quote-pink-path': "url('/path-5.svg')",
+        'help-pink-path': "url('/path-6.svg')",
       },
       backgroundPosition: {
         'blue-path-pos-xl': '119px 0px',
@@ -20,6 +21,7 @@ module.exports = {
         'blue-test-oval-sm': '57px 273px',
         'blue-test-oval-xl': '263px 250px',
         'pink-quote-oval-sm': 'left 340px',
+        'pink-help-oval-xl': '1080px 67px',
       },
     },
   },
