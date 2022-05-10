@@ -32,7 +32,7 @@ export default function DeffinitionTestiSection({ data }) {
             className="-rotate-90"
           />
         </div>
-        <div className="px-[32px] bg-test-blue-path bg-no-repeat bg-blue-test-oval-sm xl:bg-blue-test-oval-xl xl:px-[315.5px]">
+        <div className="px-[32px] bg-test-blue-path bg-no-repeat bg-blue-test-oval-sm xl:bg-blue-test-oval-xl lg:px-36 xl:px-[315.5px]">
           <p className="leading-[24px] text-right text-base xl:text-[21px] xl:leading-[32px]">
             <span className="text-[#0B24FB] font-bold text-base ">Deffinition;</span>
             {' '}
@@ -45,12 +45,12 @@ export default function DeffinitionTestiSection({ data }) {
               -weekend team
             </span>
           </p>
-          <h3 className="font-black text-[32px] leading-[37.5px] mt-[107px] mb-[30px] text-white xl:text-center">
+          <h3 className="font-black text-[32px] leading-[37.5px] mt-[107px] mb-[30px] text-white lg:text-center">
             Testimonial
           </h3>
         </div>
-        <div className="flex flex-row items-center relative -mb-[96px] px-[32px] justify-around xl:px-[315.5px]">
-          <button type="button" onClick={handlePrev} className="bg-white px-[11px] h-[32px] mr-[25px] rounded-full hidden md:block">
+        <div className="flex flex-row items-center relative -mb-[96px] px-[32px] justify-around lg:px-36 xl:px-[315.5px]">
+          <button type="button" onClick={handlePrev} className="bg-white animate-hover px-[11px] h-[32px] mr-[25px] rounded-full hidden md:block">
             <FontAwesomeIcon icon={faArrowRight} size="xs" color="#0B24FB" rotation={180} />
           </button>
           <Swiper
