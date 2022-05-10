@@ -36,4 +36,5 @@ yarn && yarn dev
 - Swiper.js(Slider)
 - getStaticProps(Fetching)
 
-
+check my GitHub to see the history or update this development.
+https://github.com/dennyzain/slicing-landing-page
