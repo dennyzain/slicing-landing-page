@@ -1,7 +1,8 @@
 import react, { useCallback } from 'react';
 import Image from 'next/image';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { HiArrowSmLeft, HiArrowSmRight } from 'react-icons/hi';
 import CardTypography from '@components/atoms/CardTypography';
 import 'swiper/css';
 
@@ -49,8 +50,8 @@ export default function DeffinitionTestiSection({ data }) {
           </h3>
         </div>
         <div className="flex flex-row items-center relative -mb-[96px] px-[32px] justify-around xl:px-[315.5px]">
-          <button type="button" onClick={handlePrev} className="bg-white p-[7.5px] mr-[25px] rounded-full hidden md:block">
-            <HiArrowSmLeft color="#0B24FB" size={17} />
+          <button type="button" onClick={handlePrev} className="bg-white px-[11px] h-[32px] mr-[25px] rounded-full hidden md:block">
+            <FontAwesomeIcon icon={faArrowRight} size="xs" color="#0B24FB" rotation={180} />
           </button>
           <Swiper
             ref={sliderRef}
@@ -69,8 +70,8 @@ export default function DeffinitionTestiSection({ data }) {
               </SwiperSlide>
             ))}
           </Swiper>
-          <button type="button" onClick={handleNext} className="bg-white p-[7.5px] ml-[25px] rounded-full animate-hover hidden md:block">
-            <HiArrowSmRight color="#0B24FB" fontSize={17} />
+          <button type="button" onClick={handleNext} className="bg-white px-[11px] h-[32px] ml-[25px] rounded-full animate-hover hidden md:block">
+            <FontAwesomeIcon icon={faArrowRight} size="xs" color="#0B24FB" />
           </button>
         </div>
 

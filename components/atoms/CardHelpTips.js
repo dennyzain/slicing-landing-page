@@ -1,5 +1,6 @@
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
-import { HiArrowSmRight } from 'react-icons/hi';
 
 export default function CardHelpTips({ title, image }) {
   return (
@@ -15,9 +16,9 @@ export default function CardHelpTips({ title, image }) {
       />
       <div className="flex flex-row pl-[25px] py-[17px] text-white bg-black bg-opacity-50 absolute -bottom-[1px]">
         <p className="font-bold leading-[19px] self-center">{title}</p>
-        <button type="button" className="bg-white p-[11px] mr-5 rounded-full animate-hover">
+        <button type="button" className="px-[11px] h-[32px] bg-white mr-5 rounded-full animate-hover self-center">
           {' '}
-          <HiArrowSmRight color="#0B24FB" size={21} />
+          <FontAwesomeIcon icon={faArrowRight} size="xs" color="#0B24FB" />
           {' '}
         </button>
       </div>
