@@ -2,17 +2,38 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+### live demo (deploy on vercel)
+
+http://slicing-landing-page.vercel.app/
+
+### Description
+
+- Mobile and Desktop responsive
+- library slider (Swiper.js)
+- CSS framework (TailwindCSS) and preprocessor (postCSS)
+- Consume API from the weekend data
+
 ## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
+**Clone The Project**
+```shell
+git clone 'url repo'
 ```
+
+**Running The Client**
+```shell
+cd slicing-landing-page
+yarn && yarn dev
+```
+ 
 
 ## Tech Stack
 
 - React(Next.js)
-- TailwindCSS
+- TailwindCSS(include postCSS)
+- eslint AirBnb(linter)
+- Swiper.js(Slider)
+- getStaticProps(Fetching)
+
+
